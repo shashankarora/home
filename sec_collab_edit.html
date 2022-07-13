@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secure Collaborative and Concurrent Editing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<!-- <div class="container"></div> -->
+			<BR> <BR>
+			<div class="container">
+
+			</div>
+			<BR> <BR>
+			<!--Research Interests section -->
+			<div class="container">
+
+				<h2>
+					<div class="text-center">Secure Collaborative and Concurrent Editing</div>
+				</h2>
+				<h2>
+					<div class="text-center">
+						<img src="SecureC2Edit_AES.png" class="rounded mx-auto d-block">
+
+					</div>
+				</h2>
+			</div>
+			<BR>
+			<!-- Motivation -->
+			<div class="container">
+
+				<B> Motivation </b><BR>
+					
+					Cloud-based online document editing services, such as Google Docs and Office 365, provide an inexpensive and efficient 
+					means of managing documents.  However, storing data on cloud also raises certain security and privacy concerns, especially 
+					when the data is of confidential and sensitive nature. Storing data on third-party servers can potentially be compromising 
+					as it gives opportunity to the third-party cloud service providers to turn semi-honest and become curious about user data. 
+					User data stored on third-party servers is <br/>also prone to attacks like virtual machine-based side-channel along with natural 
+					language processing and machine learning-based content search and retrieval techniques. In a <br/>online editing 
+					environment, user data should never be exposed to the cloud in plain text form. Thus, there is a need for secure collaborative 
+					editing frameworks and services. Prior works around secure collaborative editing have several limitations, and some are not practical.
+					
+			</div>
+			<BR>	
+			<!--About -->
+			<div class="container">
+
+				<B> About this research </b><BR>
+				<p>
+					To that end, this work proposes a suite of frameworks, SecureCEdit and two variations of SecureC2Edit to secure user data 
+					and enable co-authors of collaborative documents to <br/>keep their data confidential while providing collaborative editing services.
+					<ul>
+						<li>SecureCEdit is a client-server-based secure collaborative editing framework that provides collaborative access to users. 
+							It encrypts user documents on the fly before <br/>committing them to cloud service providers. SecureCEdit uses 
+							Advanced Encryption Standard (AES) to encrypt document contents and is platform-independent, lightweight <br/>with minimal data and 
+							resource requirements.</li>
+							<BR>
+						<li>SecureC2Edit is a structured peer-to-peer secure collaborative and concurrent editing framework. 
+							It makes use of a novel Hybrid Differential Synchronization algorithm to facilitate both collaborative access and concurrent editing.
+							<ul>
+								<BR> 
+							
+								<li>The first variation of SecureC2Edit makes use of the symmetric encryption algorithm, AES to encrypt collaborative document contents. 
+							The primary limitation of <br/>symmetric encryption, key distribution is overcome by a novel asynchronous key distribution algorithm.</li> 
+							<BR> 
+							
+							<li>The second variation of SecureC2Edit is keyless and uses Shamir's secret sharing (SSS) as the security mechanism. 
+							Use of SSS enables the framework to be synchronized on every edit, minimizing content loss, and scaling better on collaborative 
+							documents with a large amount of data. The proposed frameworks and their variations are evaluated on performance and security.</li>
+							</ul>
+						</li>
+					  </ul>
+				</p>
+				
+
+			</div>
+			<BR>
+			
+			<!--Publications section -->
+			<div class="container">
+				<b>Publications</b>
+				<ul>
+					<li><b>S Arora</b>, PK Atrey. <b>SecureC2Edit: A Framework for Secure Collaborative and Concurrent Document Editing</b>, Submitted to <br />IEEE
+					Transactions on Dependable and Secure Computing (TSDC)
+					</li>
+					<li><b>S Arora</b>, PK Atrey. <b><a
+						href="https://ieeexplore.ieee.org/abstract/document/9648395">
+						Secure Collaborative Editing Using Secret Sharing</a></b>, IEEE International Workshop on Information Forensics and Security (WIFS), 2021 <br />
+					</li>
+					<li><b>S Arora</b>, G Varshney, PK Atrey, M Mishra. <b><a
+							href="http://ieeexplore.ieee.org/abstract/document/7860548/">SecureCEdit:
+								An approach for secure cloud-based document editing</a></b> IEEE
+						Conference on <br>Communications and Network Security (CNS),
+						2016</li>
+				</ul>
+			</div>
+			<BR>
+		</div>
+	</div>
+</body>
+</html>
