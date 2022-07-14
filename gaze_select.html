@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>p,ul {
+	padding-right: 30px;
+}</style>
 <title>Gaze-Aware Representative Group Image Selection</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,33 +49,33 @@
 			<div class="container">
 
 				<B> Motivation </b><BR>
-					
+					<p>
 					With the increase in the number of features and how a photo can be taken, research is always striving to find new ways to engage users in an 
-					immersive experience of taking a <br/>photo and reliving it as a memory. Burst mode and Live mode are two such features that have come to the surface 
-					and are very popularly used. Burst mode, also known as <br/>Continuous Shooting Mode (CSM), allows the photographer to capture a series of quick-fire 
-					pictures without stopping. With the burst mode enabled on their camera, the user can <br/>click numerous pictures by pressing and holding down the 
-					camera shutter button. Apple inc. introduced live photos as a feature in iPhone 6s and later models in 2015. It takes a <br/>three-second video when 
+					immersive experience of taking a photo and reliving it as a memory. Burst mode and Live mode are two such features that have come to the surface 
+					and are very popularly used. Burst mode, also known as Continuous Shooting Mode (CSM), allows the photographer to capture a series of quick-fire 
+					pictures without stopping. With the burst mode enabled on their camera, the user can click numerous pictures by pressing and holding down the 
+					camera shutter button. Apple inc. introduced live photos as a feature in iPhone 6s and later models in 2015. It takes a three-second video when 
 					the shutter button is pressed by capturing video one and a half seconds before and after the actual shot. This enables the live photo to come to 
 					life when tapped and held by the user in photos gallery. Apple allows the user to edit the live photo and select a frame that can become the key 
 					photo, which adds too much manual work. Alternatively, the system can also select a key photo. However, it can be noticed that Apple's key photo detection 
-					does not consider the subject's gaze, especially in group pictures <br/>with more than one human subject in them.  One of the critical characteristics to enhance a key 
-					photo's aesthetic quality for a live group image is the subject's gaze. Gaze uniformity <br/>is a measure of the number of subjects in a group image 
+					does not consider the subject's gaze, especially in group pictures with more than one human subject in them.  One of the critical characteristics to enhance a key 
+					photo's aesthetic quality for a live group image is the subject's gaze. Gaze uniformity is a measure of the number of subjects in a group image 
 					looking in the same direction over the total number of subjects. Often, it is hard to take a uniformly gazed photo in group settings or social 
 					gatherings, especially when multiple camera persons attempt to capture the photo of the same group of people. Some people may look into one 
 					camera, but others may eye toward the other. We believe that the captured photo would be aesthetically pleasing if all the subjects looked in the same 
 					camera unless explicitly asked otherwise. 
-					
+				</p>
 			</div>
 			<BR>	
 			<!--About -->
 			<div class="container">
 
-				<B> About this research </b><BR>
+				<B> Key Contributions </b><BR>
 				<p>
 					The method starts with a live photo and breaks it down into multiple frames. Then, apply a face detection algorithm to detect all the faces in the group 
-					photo over each extracted <br/>frame using <a href="https://github.com/serengil/retinaface">RetinaFace</a>. Next, we loop over each detected face to isolate the 
-					pupils and detect the pupil centers. To isolate the eye frame, we used the <a href = "http://dlib.net/ml.html">Dlib-ml</a> library, which <br/>provides sixty-eight 
-					facial landmarks and made use of the implementation of pupil detection inspired by YOLO and convolutional neural network to obtain the pupil center <br/>coordinates. 
+					photo over each extracted frame using <a href="https://github.com/serengil/retinaface">RetinaFace</a>. Next, we loop over each detected face to isolate the 
+					pupils and detect the pupil centers. To isolate the eye frame, we used the <a href = "http://dlib.net/ml.html">Dlib-ml</a> library, which provides sixty-eight 
+					facial landmarks and made use of the implementation of pupil detection inspired by YOLO and convolutional neural network to obtain the pupil center coordinates. 
 					The isolated eye frame is then passed on to the blink detector. A metric called Eye Aspect Ratio (EAR), which uses facial landmarks and 
 					calculates the eyelid's distance from the bottom of the eye, was used. If the EAR falls below a threshold, the eyelid is assumed to be closed, resulting in a 
 					blink for that face, and we move on to the next face. If no blink is detected, the eye frame is then passed to the gaze direction calculator. 
@@ -86,12 +89,12 @@
 			<div class="container">
 				<b>Publications</b>
 				<ul>
-					<li>O Kulkarni, S Arora and PK Atrey. <b>GARGI: Selecting Gaze-Aware Representative Group Image from a Live Photo</b>, Submitted to The 5th IEEE International 
-						Conference <br />on Multimedia Information Processing and Retrieval (MIPR), 2022
+					<li>O Kulkarni, S Arora and PK Atrey. <b>GARGI: Selecting Gaze-Aware Representative Group Image from a Live Photo</b>, The 5th IEEE International 
+						Conference on Multimedia Information Processing and Retrieval (MIPR), San Jose, USA, August 2022 (To Appear)
 					</li>
-					<li>O Kulkarni, V Patil, SB Parikh, S Arora, PK Atrey. <b><a
+					<li>O Kulkarni, V Patil, SB Parikh, S Arora and PK Atrey. <b><a
 						href="https://ieeexplore.ieee.org/abstract/document/9327911/">
-						Can You All Look Here? Towards Determining Gaze Uniformity In Group Images</a></b>, IEEE International Symposium on Multimedia (ISM), 2020 
+						Can You All Look Here? Towards Determining Gaze Uniformity In Group Images</a></b>, IEEE International Symposium on Multimedia (ISM), Tapei, Taiwan, December 2020 
 					</li>
 				</ul>
 			</div>

@@ -9,3 +9,7 @@ div {
 th, td {
     padding: 5px;
 }
+
+p {
+	padding-right: 30px;
+}
