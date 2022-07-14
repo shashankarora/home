@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>p,ul {
+	padding-right: 30px;
+}</style>
+<title>Securing Emails from Service Providers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<!-- <div class="container"></div> -->
+			<BR> <BR>
+			<div class="container">
+
+			</div>
+			<BR> <BR>
+			<!--Research Interests section -->
+			<div class="container">
+
+				<h2>
+					<div class="text-center">SecureCMail: Securing Emails from Service Providers</div>
+				</h2>
+				<h2>
+					<div class="text-center">
+						<img src="archfff.jpg" class="rounded mx-auto d-block" width = 800>
+					</div>
+				</h2>
+			</div>
+			<BR>
+			<!-- Motivation -->
+			<div class="container">
+
+				<B> Motivation </b><BR>
+					<p>
+						Email is regularly used as a primary form of communication and as such, email messages might contain highly sensitive information such as 
+						social security numbers, passport credentials, credit card information, etc. It is often assumed that information sent over email is 
+						available to intended parties only, which might not always be the case. This has lead to concerns over email confidentiality. Emails are 
+						stored on infrastructure belonging to email service providers (ESPs). They are generally not read by the service providers, 
+						but there exists a potential threat from these ESPs as they can have access to users' email messages. ESPs may not be able to guarantee 
+						users' privacy in all scenarios due to the possibilities of various security breaches across the network. Threats from malicious external 
+						adversaries obtaining unauthorized access to these email servers and subsequently to users' emails may cause a huge loss in privacy. 
+						With growing concern over mass surveillance, privacy infringement and online attacks leading to unauthorized access and data theft, 
+						there have been various attempts to add security to email communication with varying degrees of success.
+				</p>
+			</div>
+			<BR>	
+			<!--About -->
+			<div class="container">
+
+				<B> Key Contributions </b><BR>
+				<p>
+					This research focuses on these security issues associated with emails and presents a method called S3Email, Shamir Secret Sharing (S3) based email, 
+					which uses a desktop mail user agent (MUA) application. The proposed method aims to address security under the Semi-malicious ESP threat model. 
+					The core idea behind the proposed solution is to use S3 technique to create shares of an email message (email subject, body and attachment) before it is sent. 
+					The shares are reconstructed at the receiver's end to reveal the original email message. The distinct characteristics of the proposed S3Email method are: 
+					<ul>
+						<li>Since the S3Email method is based on the S3 scheme which doesn't require a key, it not only avoids the key storage problem, but also 
+							provides information theoretic security.</li>
+						<li>The S3Email method doesn't require any additional email infrastructure; rather it uses a decentralized architecture for email communication 
+							utilizing existing email services.</li>
+						<li>Unlike other schemes that use PGP, the S3Email method does not require PGP and reduces reliance on third party services and infrastructure for 
+							email security.</li>
+					</ul>
+				</p>
+				
+
+			</div>
+			<BR>
+			
+			<!--Publications section -->
+			<div class="container">
+				<b>Publications</b>
+				<ul>
+					<li>P Singh, S Arora, K Williamson and PK Atrey. <b><a
+						href="http://ieeexplore.ieee.org/abstract/document/8122941/">S3Email:
+							A Method for Securing Emails from Service Providers</a></b>, IEEE
+					International Conference on Systems, Man, and Cybernetics
+					(SMC),  Banff, AB, Canada, October 2017
+				</li>
+				</ul>
+			</div>
+			<BR>
+		</div>
+	</div>
+</body>
+</html>
